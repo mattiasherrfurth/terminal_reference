@@ -1,3 +1,12 @@
+### COMMON COMMANDS
+status
+fetch
+pull
+branch
+add
+commit -m "description"
+push
+
 ## CLONE A REPO TO CURRENT DIRECTORY - i.e. duplicate that repo to your local folder
 git clone https://hostname.domain.com/org/repo.git
 
@@ -24,11 +33,3 @@ git pull origin master
 
 ### LIST THE FILE CHANGES THAT HAVE BEEN FETCHED - i.e. see what has been changed and could be pulled into your local branch
 git log origin/master ^master
-
-###### OPENSSL ######
-
-# create self-signed key
-sudo openssl req -x509 -nodes -newkey rsa:2048 -keyout /etc/ssl/<keyname>.key -out /etc/ssl/<certname>.crt -days 3650
-
-# create certificate request and key for CA to sign
-openssl req -new -nodes -out <cert request name>.csr -keyout <key name>.key -config /path/to/directory/openssl.cfg
