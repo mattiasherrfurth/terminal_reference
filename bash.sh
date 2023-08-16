@@ -11,6 +11,7 @@ mkdir
 cat
 diff
 echo
+grep
 history
 pidof
 kill
@@ -23,6 +24,9 @@ ip
 ifconfig
 apt / snap / yum / dnf
 vi / vim / nano
+clear
+reset
+exit
 
 # recursively search folders in directory for text string
 sudo grep -rnwl '/path/to/folder' -e 'text_to_search_for'
@@ -42,3 +46,7 @@ rm -r folderName
 # configure history command to display timestamps
 echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile
 source ~/.bash_profile
+
+# configure history command to store more commands
+export HISTSIZE=100000
+export HISTFILESIZE=999999
