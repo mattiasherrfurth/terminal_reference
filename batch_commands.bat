@@ -25,6 +25,9 @@ setx VARIABLE "string"
 rem ### find a filename with string in name
 dir c:\path\to\folder\*string* /s /b
 
+rem ### find string in files in current directory, case insensitive
+findstr /I "<h1>String\ to\ Find</h1>" *.*
+
 rem ### determine who is logged into a remote computer
 query user /server:hostname.domain.com
 
