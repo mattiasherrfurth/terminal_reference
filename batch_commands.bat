@@ -39,3 +39,6 @@ net use \\hostname.domain.com\fileshare /u:domain\user password
 
 rem ### copy file w/ overwrite
 copy \\path\to\oldfile.txt \\path\to\newfile.txt /Y
+
+rem ### run powershell script from cmd
+powershell.exe -noexit -file "C:\path\to\file.ps1" "hostname"
