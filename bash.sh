@@ -1,5 +1,6 @@
 # common tools
 man
+sudo
 pwd
 cd
 ls
@@ -10,9 +11,12 @@ rm
 mkdir
 cat
 diff
+file
+chmod
 echo
 grep
 history
+ps
 pidof
 kill
 pkill
@@ -23,7 +27,7 @@ dpkg
 ip
 ifconfig
 apt / snap / yum / dnf
-vi / vim / nano
+vi / vim / nano / pico
 clear
 reset
 exit
