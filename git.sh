@@ -33,3 +33,6 @@ git pull origin master
 
 ### LIST THE FILE CHANGES THAT HAVE BEEN FETCHED - i.e. see what has been changed and could be pulled into your local branch
 git log origin/master ^master
+
+### SEE MOST RECENT STASH - i.e. what changes are saved away and not yet staged for commit?
+git stash show -p
