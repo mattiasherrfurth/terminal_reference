@@ -1,4 +1,4 @@
-# common tools
+# common *nix tools
 man
 sudo
 pwd
@@ -9,10 +9,13 @@ cp
 mv
 rm
 mkdir
+du
 cat
+head
+tail
 diff
 file
-chmod
+chmod / setfacl
 echo
 grep
 history
@@ -21,6 +24,9 @@ pidof
 kill
 pkill
 ping
+users
+groups
+realm
 curl
 wget
 dpkg
@@ -44,6 +50,9 @@ ldd /path/to/executable | grep string-to-search
 # list all active processes, sorted by command name
 ps -e --sort cmd
 
+# find what uses the most disk space
+du / | sort -n | tail
+
 # remove folder recursively
 rm -r folderName
 
@@ -54,3 +63,6 @@ source ~/.bash_profile
 # configure history command to store more commands
 export HISTSIZE=100000
 export HISTFILESIZE=999999
+
+# see recent logs for user logins
+tail -f /var/log/secure

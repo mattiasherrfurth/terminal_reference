@@ -7,6 +7,10 @@ add
 commit -m "description"
 push
 
+## SSH to GitHub in Git Bash on Windows
+home=C:/Users/Username
+ssh -T git@github.com -F C:/Users/Username/.ssh/config -i C:/Users/Username/.ssh/gitkey
+
 ## CLONE A REPO TO CURRENT DIRECTORY - i.e. duplicate that repo to your local folder
 git clone https://hostname.domain.com/org/repo.git
 
@@ -22,6 +26,9 @@ git mv ./old_file_name ./new_file_name
 ### COMMIT ALL FILES FROM CURRENT DIRECTORY - i.e. commit your changes to your local branch
 git commit --all
 
+### HARD RESET ALL COMMITS
+git reset --hard HEAD~1
+
 ### PUSH ALL FILES FROM CURRENT DIRECTORY - i.e. push all changes in your commit to the master branch
 git push --all
 
@@ -36,3 +43,9 @@ git log origin/master ^master
 
 ### SEE MOST RECENT STASH - i.e. what changes are saved away and not yet staged for commit?
 git stash show -p
+
+### LIST ALL REMOTE BRANCHES
+git branch -r
+
+### VIEW FILE IN BRANCH
+git show branch:file
