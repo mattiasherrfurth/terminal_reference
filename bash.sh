@@ -13,6 +13,8 @@ du
 cat
 head
 tail
+less
+more
 diff
 file
 chmod / setfacl
