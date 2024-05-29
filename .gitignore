@@ -1,2 +1,4 @@
 # ignore backup files
 *.bak
+# ignore KDE backups
+*.kate-swp
