@@ -13,6 +13,8 @@
 ls -l
 # ls - filetypes
 ls -F
+# ls - see dot files
+ls -a
 
 # find - name and print
 find dir -name filename -print
