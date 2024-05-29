@@ -12,6 +12,9 @@ ls -l
 # ls - filetypes
 ls -F
 
+# find - name and print
+find dir -name filename -print
+
 # rm - recursive (dangerous)
 rm -r
 
