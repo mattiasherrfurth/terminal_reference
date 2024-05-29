@@ -17,6 +17,8 @@ less
 more
 diff
 file
+find
+locate
 chmod / setfacl
 echo
 grep
