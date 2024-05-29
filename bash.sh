@@ -22,6 +22,7 @@ locate
 chmod / setfacl
 echo
 grep
+sort
 history
 ps
 pidof
