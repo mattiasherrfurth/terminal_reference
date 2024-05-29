@@ -43,6 +43,9 @@ exit
 # recursively search folders in directory for text string
 grep -rnwl '/path/to/folder' -e 'text_to_search_for'
 
+# pipe grep results into less
+grep eigh /usr/share/dict/words | less
+
 # recursively search files in directory	by name with wildcard 
 find /path/to/folder -name	"*filename*"
 
