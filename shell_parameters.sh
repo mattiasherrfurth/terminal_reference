@@ -7,6 +7,8 @@
 .+ # any one or more characters
 .  # one arbitrary character
 
+
+### COMMAND PARAMETERS
 # ls - long listing
 ls -l
 # ls - filetypes
@@ -14,6 +16,11 @@ ls -F
 
 # find - name and print
 find dir -name filename -print
+
+# sort - numerically
+sort -n
+# sort - reversed
+sort -r
 
 # rm - recursive (dangerous)
 rm -r
