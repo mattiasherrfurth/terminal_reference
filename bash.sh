@@ -41,10 +41,10 @@ reset
 exit
 
 # recursively search folders in directory for text string
-sudo grep -rnwl '/path/to/folder' -e 'text_to_search_for'
+grep -rnwl '/path/to/folder' -e 'text_to_search_for'
 
 # recursively search files in directory	by name with wildcard 
-sudo find /path/to/folder -name	"*filename*"
+find /path/to/folder -name	"*filename*"
 
 # List dependencies filtered to string
 ldd /path/to/executable | grep string-to-search
