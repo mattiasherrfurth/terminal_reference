@@ -61,7 +61,7 @@ ps -e --sort cmd
 # find what uses the most disk space
 du / | sort -n | tail
 
-# remove folder recursively
+# remove folder recursively (DANGEROUS)
 rm -r folderName
 
 # configure history command to display timestamps
