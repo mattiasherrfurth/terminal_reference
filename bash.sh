@@ -43,6 +43,9 @@ clear
 reset
 exit
 
+# recursively move files from one directory to another
+mv /path/to/folder/* /newpath/to/folder/
+
 # recursively search folders in directory for text string
 grep -rnwl '/path/to/folder' -e 'text_to_search_for'
 
