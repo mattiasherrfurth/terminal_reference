@@ -77,3 +77,6 @@ export HISTFILESIZE=999999
 
 # see recent logs for user logins
 tail -f /var/log/secure
+
+# current epoch time in milliseconds
+date +%s%N | cut -b1-13
