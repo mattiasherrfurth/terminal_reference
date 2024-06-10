@@ -34,6 +34,8 @@ groups
 realm
 curl
 wget
+md5sum
+sha256sum
 dpkg
 ip
 ifconfig
@@ -54,6 +56,9 @@ grep eigh /usr/share/dict/words | less
 
 # recursively search files in directory by name with wildcard
 find /path/to/folder -name "*filename*" -print
+
+# get fingerprint from key
+gpg --show-keys key.asc
 
 # List dependencies filtered to string
 ldd /path/to/executable | grep string-to-search
