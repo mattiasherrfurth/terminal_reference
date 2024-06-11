@@ -1,6 +1,9 @@
 ### recursively list folders/objects in bucket
 aws s3 ls s3://bp-test-1 --recursive
 
+### get instance profile
+curl http://169.254.169.254/latest/meta-data/iam/info
+
 ### count objects in bucket (NOTE: needs bash, grep is a *nix tool)
 aws s3 ls s3://bucketname/foldername/ --recursive --summarize | grep "Total Objects:"
 
