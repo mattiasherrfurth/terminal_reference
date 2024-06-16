@@ -34,6 +34,7 @@ groups
 realm
 curl
 wget
+gpg
 md5sum
 sha256sum
 dpkg
