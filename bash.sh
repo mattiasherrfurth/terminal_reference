@@ -61,6 +61,12 @@ find /path/to/folder -name "*filename*" -print
 # get fingerprint from key
 gpg --show-keys key.asc
 
+# dd iso to bootable USB
+sudo dd if=/home/user/Downloads/boot.iso of=/dev/sdaX bs=4096 status=progress
+
+# cat lines matching text
+cat ./path/to/file | grep text-string
+
 # List dependencies filtered to string
 ldd /path/to/executable | grep string-to-search
 
