@@ -1,6 +1,5 @@
 # common *nix tools
 man
-sudo
 pwd
 cd
 ls
@@ -62,7 +61,7 @@ find /path/to/folder -name "*filename*" -print
 gpg --show-keys key.asc
 
 # dd iso to bootable USB
-sudo dd if=/home/user/Downloads/boot.iso of=/dev/sdaX bs=4096 status=progress
+dd if=/home/user/Downloads/boot.iso of=/dev/sdaX bs=4096 status=progress
 
 # cat lines matching text
 cat ./path/to/file | grep text-string
@@ -76,8 +75,8 @@ ps -e --sort cmd
 # find what uses the most disk space
 du / | sort -n | tail
 
-# remove folder recursively (DANGEROUS)
-rm -r folderName
+# # DANGEROUS COMMAND - remove folder recursively
+# rm -r folderName
 
 # configure history command to display timestamps
 echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile
