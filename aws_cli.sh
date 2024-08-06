@@ -25,6 +25,9 @@ aws s3 ls s3://mybucket --recursive | awk '{print $4}'
 ### tag objects recursively (NOTE: needs bash, xargs is a *nix tool)
 aws s3api list-objects --bucket mybucket --query 'Contents[].{Key:Key}' --prefix foo/bar --output text | xargs -n 1 aws s3api put-object-tagging  --bucket mybucket --tagging 'TagSet=[{Key=colour,Value=blue}]' --key
 
+### sync s3 bucket to local folder (Linux)
+aws s3 sync s3://mherrfurth.net $HOME/Documents/AWS/s3_repl/mherrfurth
+
 ### copy local file to an S3 URI
 aws s3 cp "C:\path\to\file.csv" s3://bucketname/foldername/
 
