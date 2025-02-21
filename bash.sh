@@ -78,8 +78,9 @@ ps ax	# show all processes, not just ones you own
 ps u	# include more detailed info on processes
 ps w	# show full command names
 
-# freeze a process instead of killing it
+# freeze and continue a process instead of killing it
 kill -STOP pid
+kill -CONT pid
 
 # find what uses the most disk space
 du / | sort -n | tail
