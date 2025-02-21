@@ -19,6 +19,7 @@ file
 find
 locate
 chmod / setfacl
+ln
 echo
 grep
 sort
@@ -91,6 +92,9 @@ du / | sort -n | tail
 
 # # DANGEROUS COMMAND - remove folder recursively
 # rm -r folderName
+
+# create symbolic link
+ln -s target linkname
 
 # configure history command to display timestamps
 echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile
