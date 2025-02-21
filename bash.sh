@@ -38,6 +38,9 @@ wget
 gpg
 md5sum
 sha256sum
+gzip
+gunzip
+tar
 dpkg
 ip
 ifconfig
@@ -115,6 +118,10 @@ command > stdout 2> stderr
 
 # write standard output and standard error to same file
 command > output 2>&1
+
+# compress multiple files into an archive (then extract
+tar cvf archive.tar file1 file2 file3
+tar xvf archive.tar
 
 # append text to a file
 echo example_text >> filename
