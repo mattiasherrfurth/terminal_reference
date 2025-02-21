@@ -25,6 +25,7 @@ sort
 history
 ps
 pidof
+nohup
 kill
 pkill
 ping
@@ -77,6 +78,9 @@ ps x	# show all of your running processes
 ps ax	# show all processes, not just ones you own
 ps u	# include more detailed info on processes
 ps w	# show full command names
+
+# run a process that stays up after log out
+nohup command
 
 # freeze and continue a process instead of killing it
 kill -STOP pid
