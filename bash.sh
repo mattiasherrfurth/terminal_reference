@@ -91,3 +91,9 @@ tail -f /var/log/secure
 
 # current epoch time in milliseconds
 date +%s%N | cut -b1-13
+
+# write standard output and standard error to two files
+command > stdout 2> stderr
+
+# write standard output and standard error to same file
+command > output 2>&1
