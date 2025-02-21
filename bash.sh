@@ -72,6 +72,12 @@ ldd /path/to/executable | grep string-to-search
 # list all active processes, sorted by command name
 ps -e --sort cmd
 
+# other ps options
+ps x	# show all of your running processes
+ps ax	# show all processes, not just ones you own
+ps u	# include more detailed info on processes
+ps w	# show full command names
+
 # find what uses the most disk space
 du / | sort -n | tail
 
