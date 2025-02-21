@@ -90,6 +90,9 @@ nohup command
 kill -STOP pid
 kill -CONT pid
 
+# list sudo logs
+journalctl SYSLOG_IDENTIFIER=sudo
+
 # find what uses the most disk space
 du / | sort -n | tail
 
