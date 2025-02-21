@@ -97,3 +97,6 @@ command > stdout 2> stderr
 
 # write standard output and standard error to same file
 command > output 2>&1
+
+# append text to a file
+echo example_text >> filename
