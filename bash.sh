@@ -26,6 +26,7 @@ sort
 history
 ps
 pidof
+journalctl
 nohup
 kill
 pkill
@@ -64,6 +65,9 @@ find /path/to/folder -name "*filename*" -print
 
 # list all block devices
 ls /dev -l | grep '^b'
+
+# list kernel messages
+journalctl -k
 
 # get fingerprint from key
 gpg --show-keys key.asc
