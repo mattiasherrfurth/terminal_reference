@@ -62,6 +62,9 @@ grep eigh /usr/share/dict/words | less
 # recursively search files in directory by name with wildcard
 find /path/to/folder -name "*filename*" -print
 
+# list all block devices
+ls /dev -l | grep '^b'
+
 # get fingerprint from key
 gpg --show-keys key.asc
 
