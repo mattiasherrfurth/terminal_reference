@@ -27,6 +27,8 @@ history
 ps
 pidof
 journalctl
+udevd
+udevadmm
 nohup
 kill
 pkill
@@ -68,6 +70,9 @@ ls /dev -l | grep '^b'
 
 # list kernel messages
 journalctl -k
+
+# monitor uevents (kernel notifications sent to udevd)
+udevadm monitor
 
 # get fingerprint from key
 gpg --show-keys key.asc
