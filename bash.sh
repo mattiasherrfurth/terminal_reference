@@ -24,6 +24,8 @@ echo
 grep
 sort
 history
+fdisk
+parted
 ps
 pidof
 journalctl
