@@ -28,6 +28,9 @@ fdisk
 parted
 mkfs
 mount
+umount
+blkid
+lsblk
 ps
 pidof
 journalctl
@@ -80,6 +83,9 @@ mkfs -t ext4 /dev/[device name]
 
 # mount a filesystem
 mount -t [type] /dev/[device name] /path/to/mountpoint
+
+# remount in read-write mode
+mount -n -o remount /path/to/mountpoint
 
 # monitor uevents (kernel notifications sent to udevd)
 udevadm monitor
