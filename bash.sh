@@ -33,6 +33,9 @@ blkid
 lsblk
 du
 fsck
+free
+mkswap
+swapon
 ps
 pidof
 journalctl
