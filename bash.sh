@@ -26,6 +26,8 @@ sort
 history
 fdisk
 parted
+mkfs
+mount
 ps
 pidof
 journalctl
@@ -72,6 +74,12 @@ ls /dev -l | grep '^b'
 
 # list kernel messages
 journalctl -k
+
+# create a filesystem (only on newly created partitions)
+mkfs -t ext4 /dev/[device name]
+
+# mount a filesystem
+mount -t [type] /dev/[device name] /path/to/mountpoint
 
 # monitor uevents (kernel notifications sent to udevd)
 udevadm monitor
