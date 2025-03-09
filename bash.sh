@@ -31,6 +31,8 @@ mount
 umount
 blkid
 lsblk
+du
+fsck
 ps
 pidof
 journalctl
@@ -86,6 +88,9 @@ mount -t [type] /dev/[device name] /path/to/mountpoint
 
 # remount in read-write mode
 mount -n -o remount /path/to/mountpoint
+
+# list disk usage for entire directory
+cd /; du
 
 # monitor uevents (kernel notifications sent to udevd)
 udevadm monitor
